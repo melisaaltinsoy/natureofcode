@@ -28,5 +28,8 @@ class Walker {
     else {
       y--;
     }
+    //Constraint, stay on the screen
+    x = constrain(x, 10, width-10);
+    y = constrain(y, 10, height-10);
   } 
 }
